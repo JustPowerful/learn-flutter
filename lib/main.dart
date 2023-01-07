@@ -22,21 +22,17 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.red,
         centerTitle: true,
       ),
-      body: const Center(
-        child: Text(
-          "A great text",
-          style: TextStyle(
-              fontFamily: "Cairo",
-              fontSize: 20.0,
-              fontWeight: FontWeight.bold,
-              letterSpacing: 2,
-              color: Colors.blue),
+      body: Center(
+        child: IconButton(
+          icon: const Icon(Icons.elevator),
+          onPressed: () {},
+          color: Colors.red,
         ),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
-        child: const Text("+"),
         backgroundColor: Colors.red,
+        child: const Text("+"),
       ),
     );
   }
